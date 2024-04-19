@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter";
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 header {
@@ -18,19 +20,13 @@ main {
   flex-direction: row;
 }
 
-input {
-  border: 1px;
-  width: 34px;
-}
-
-input:checked {
-  background: hsla(0, 0%, 17%, 1);
-}
-
 .gray-font {
   color: rgba(112, 112, 112, 1);
 }
 
+.small-font {
+  font-size: 14px;
+}
 .header-nav {
   display: flex;
   align-items: center;
@@ -61,7 +57,19 @@ input:checked {
 /* path */
 
 .main-leftside {
-  width: 192px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.main-liftside-headre-with-checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-leftside-checkboxes {
+  max-width: 192px;
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -73,12 +81,79 @@ input:checked {
   gap: 10px;
 }
 
+.input-checkbox {
+  border: 1px;
+  max-width: 16px;
+}
+
+.input-checkbox:checked {
+  background: hsla(0, 0%, 17%, 1);
+}
+
+.input-circle-checkbox {
+  max-width: 18px;
+  max-height: 18px;
+  border-radius: 100px;
+}
+
 .main-part {
-  width: 1131px;
+  max-width: 1131px;
 }
 
 .main-part-header {
-  width: calc(100% - 1px);
+  max-width: 1130px;
+  height: 78px;
   display: flex;
   flex-direction: row;
+}
+
+.main-path-info-block {
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+
+.main-part-buttons-block {
+  display: flex;
+  flex-direction: space-between;
+}
+
+.main-part-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.main-part-button {
+  border: 1px;
+  border-radius: 3px;
+  border: 1px solid rgba(43, 43, 43, 1);
+  display: flex;
+  align-items: center;
+  background: none;
+  height: 28px;
+}
+
+.button1,
+.button3 {
+  padding-left: 14px;
+}
+
+.button1 {
+  padding-right: 21px;
+}
+
+.button2 {
+  padding-left: 17px;
+  padding-right: 18px;
+}
+
+.button3 {
+  padding-right: 15px;
+}
+
+.main-part-button:focus {
+  background: rgba(43, 43, 43, 1);
+  color: rgba(255, 255, 255, 1);
 }
