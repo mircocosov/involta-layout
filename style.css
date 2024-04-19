@@ -20,6 +20,11 @@ main {
   flex-direction: row;
 }
 
+img {
+  max-width: 367px;
+  object-fit: none;
+}
+
 .gray-font {
   color: rgba(112, 112, 112, 1);
 }
@@ -116,7 +121,7 @@ main {
 
 .main-part-buttons-block {
   display: flex;
-  flex-direction: space-between;
+  justify-content: space-between;
 }
 
 .main-part-buttons {
@@ -156,4 +161,35 @@ main {
 .main-part-button:focus {
   background: rgba(43, 43, 43, 1);
   color: rgba(255, 255, 255, 1);
+}
+
+.assortiment {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.main-row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 367px;
+  height: 367px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
 }
