@@ -21,8 +21,9 @@ main {
 }
 
 img {
-  max-width: 367px;
-  object-fit: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .gray-font {
@@ -165,28 +166,26 @@ img {
 
 .assortiment {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 38px;
 }
 
-.main-row {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
 .item {
+  width: calc(100% / 3 - 38px * 2 / 3);
   display: flex;
   justify-content: center;
   flex-direction: column;
+  aspect-ratio: 1;
 }
 
 .image {
-  width: 367px;
-  height: 367px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1;
+  overflow: hidden;
 }
 
 .item-info {
