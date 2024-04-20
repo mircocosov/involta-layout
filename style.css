@@ -26,6 +26,14 @@ img {
   object-fit: contain;
 }
 
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
 .gray-font {
   color: rgba(112, 112, 112, 1);
 }
@@ -274,4 +282,106 @@ img {
   line-height: 26px;
   letter-spacing: -0.03em;
   text-align: left;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  margin-right: 64px;
+}
+
+.support {
+  margin-right: 74px;
+}
+
+.catalog {
+  margin-right: 28px;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 9.49px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: row;
+  gap: 39px;
+}
+
+.side-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 19.36px;
+  text-align: left;
+}
+
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.phone-number {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.city {
+  font-size: 13px;
+  line-height: 15.73px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.upper {
+  border: 1px solid rgb(43, 43, 43);
+}
+
+.lower {
+  border: 1px dashed rgb(112, 112, 112);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.low {
+  display: flex;
+  max-width: 262px;
+  margin-right: 350px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.address {
+  display: flex;
+  max-width: 195px;
+  margin-left: 419.65px;
 }
