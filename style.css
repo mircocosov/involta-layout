@@ -66,6 +66,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  margin-right: 38px;
 }
 
 .main-liftside-headre-with-checkbox {
@@ -107,10 +108,10 @@ img {
 }
 
 .main-part-header {
-  max-width: 1130px;
+  max-width: 100%;
   height: 78px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
 .main-path-info-block {
@@ -191,4 +192,86 @@ img {
 .item-info {
   display: flex;
   justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pagination-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.big-button {
+  border: 1px solid rgba(43, 43, 43, 1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  font-size: 14px;
+  width: 100px;
+  height: 34px;
+}
+
+.page-button {
+  background: none;
+  border: 1px solid rgba(43, 43, 43, 1);
+  width: 34px;
+  height: 34px;
+  font-size: 14px;
+  text-align: center;
+  text-justify: center;
+  aspect-ratio: 1;
+}
+
+.page-button + .active {
+  background-color: rgba(43, 43, 43, 1);
+  border: 1px solid rgba(43, 43, 43, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.see-more-buttons {
+  background: none;
+  border: 1px solid rgba(43, 43, 43, 1);
+  width: 125px;
+  height: 34px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 16.94px;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reduce-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.info-block-title {
+  margin-left: 1px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.info-block-text {
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
